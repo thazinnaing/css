@@ -1,0 +1,164 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.maincontainer{
+    
+    max-width:1024px;
+    margin:0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top:0;
+    border-bottom: 1px solid lightgrey;
+    opacity: 0.9;
+    background-color:#FAFAFA;
+
+}
+.titleheader{
+    margin-bottom:20px;
+}
+.passDisplay{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.menu{
+    padding-top:10px;
+    margin-bottom:20px;
+   
+
+}
+.innerleft{
+    width:70%;
+    margin-left:0 auto;
+}
+.menuitem{
+  
+    text-decoration:none;
+    color:inherit;
+    margin-left:20px;
+    font-size:18px;
+    
+
+}
+.menuitem:hover{
+    border-bottom-style: solid;
+    color: blue;
+}
+.logocontainer{
+    width: 40px;
+    height: 40px;
+
+}
+.logo{
+    width:100%;
+}
+.container{
+
+}
+.left{
+    
+    display: inline-block;
+    width:40%;
+}
+.inputspan{
+    margin-top: 20px;
+}
+.inputblock{
+    display:block;
+    margin-top:20px;
+    margin-bottom:15px;
+    border:none;
+    background-color:antiquewhite;
+
+    height: 25px;
+    width:230px;
+    border-radius: 10px;
+    outline:none;
+    padding-left:15px;
+    font-size:15px;
+}
+.signinbutton{
+    background-color: rgb(55, 55, 236);
+    border-radius:10px;
+    border:none;
+    color: white;
+    padding: 4px 10px 4px;
+    font-size:15px;
+    width:80px;
+}
+.googlelogo{
+    width: 31%;
+}
+.applelogo{
+    width: 35%;
+    
+}
+.right{
+    display: inline-block;
+    width:50%;
+   
+}
+.rightimg{
+    width:100%;
+}
+.footer{
+    margin-top:5%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 1%;
+    background-color: antiquewhite;
+}
+.mobilemenucontainer{
+    width:40px;
+    height:40px;
+}
+.mobilemenu{
+    width:100%;
+}
+.mobilemenucontainer{
+    display:none;
+}
+
+@media(max-width: 767px){
+    .menucontainer{
+        display: none;
+    }
+    .mobilemenucontainer{
+        display: block;
+    }
+    .left{
+        width:100%;
+    }
+    .innerleft{
+        width: 70%;
+        margin:0 auto;
+    }
+    .right{
+        width:100%;
+        text-align: center;
+        overflow:hidden;
+    }
+    .rightimg{
+        margin:0 -50%;
+    }
+    .header{
+        justify-content: space-between;
+    }
+
+    
+}
+@media(max-width:300px){
+    .innerleft{
+        width: 95%;
+        margin:0 auto;
+    }
+}
